@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Grok | Giis</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="text/css" href="images/Favicon-Grok.png">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+	  rel="stylesheet"/>
+	 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+	  rel="stylesheet"/>
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/js/intlTelInput-jquery.min.js"></script>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-6">
+			<div class="welcome-text-div">
+				<h3 class="home-title">WELCOME!!</h3>
+			</div>	
+			<div>
+				<h4 class="sub-title">Please sign up to participate <br>in the competetion!</h4>
+			</div>	
+			<div class="logo-div">
+				<!-- <div class="row">
+					<div class="col-5">
+						 <img class="logo-giis" src="images/giis_logo.png">
+					</div>
+					<div class="col-6">
+						  <img style="margin-top: -50px;" class="logo-giis" src="images/grok_logo.png">
+					</div>
+				</div> -->
+				<img class="logo-giis" src="images/giis_logo.png">
+				 <img style="margin-top: -10px;margin-left: 20px;" class="logo-giis" src="images/grok_logo.png">
+
+			</div>	
+		</div>
+		<div class="col-6">
+			<div class="sign-up-box"><br>
+				<h3 class="sign-up-title">Sign up</h3>
+				<center><input type="text" class="text-input form-control" name="" placeholder="Enter your full name">
+				<input type="text" class="text-input form-control" name="" placeholder="Enter school name">
+				<select class="text-input form-control">
+					<option>Select Grade</option>
+				</select>
+				<input type="text" class="text-input form-control" name="" placeholder="Enter parents email address">
+				<input type="text" class="text-input form-control" id="mobile_number" name="" placeholder="Enter parents mobile number">
+				
+
+
+				<div style="margin-top: 20px;margin-left: 12px;" class="row mb-5">
+				    <div class="col d-flex">     
+				      <div class="form-check">
+				        <input class="form-check-input" type="checkbox" value="" id=""  />
+				        <label class="form-check-label" for=""> I agree <b>T&C</b>, and <b>Privacy Policy</b> </label>
+				      </div>
+				    </div>				   
+				  </div>
+
+
+				  <button class="signup-btn btn submit-form">Sign Up</button>
+
+
+
+			</center>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+    
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+</html>
+<script type="text/javascript">
+	
+        $(function () {             
+            var code = $('#mobile_number').val("+971");
+            $('#mobile_number').intlTelInput({
+                autoHideDialCode: true,
+                autoPlaceholder: "ON",
+                dropdownContainer: document.body,
+                formatOnDisplay: true,
+                hiddenInput: "full_number",
+                initialCountry: "auto",
+                nationalMode: true,
+                placeholderNumberType: "MOBILE",
+                preferredCountries: ['US'],
+                separateDialCode: true
+            });
+            $('.submit-form').on('click', function () {
+
+            	location.href="game-selection.html";
+
+           }); 	
+        });
+</script>
